@@ -1,0 +1,21 @@
+# 確保所有文本文件使用 CRLF 行結束符
+* text=auto eol=crlf
+
+# 特定文件類型強制使用 CRLF
+*.js text eol=crlf
+*.jsx text eol=crlf
+*.ts text eol=crlf
+*.tsx text eol=crlf
+*.css text eol=crlf
+*.html text eol=crlf
+*.json text eol=crlf
+*.md text eol=crlf
+*.txt text eol=crlf
+
+# 二進制文件保持原樣
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary

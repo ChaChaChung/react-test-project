@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 基本 SEO Meta 標籤 (會被 React Helmet 覆蓋) -->
+    <title>React SEO - 現代化網站開發 | 測試 SEO 檢查工具</title>
+    <meta
+      name="description"
+      content="採用 React 框架與 Vite 建構工具，打造載入飛快、互動流暢的現代化網站。為實現頂尖 SEO 優化，我們導入伺服器端渲染 (SSR) 或靜態生成 (SSG) 技術，確保搜尋引擎能完整索引頁面內容，克服單頁應用的限制，完美結合了卓越使用者體驗與高搜尋能見度。"
+    />
+    <meta
+      name="keywords"
+      content="React, Vite, SEO, 網站開發, 前端"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- 預載入重要資源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- DNS 預取 -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+    <!-- 主題色彩 -->
+    <meta name="theme-color" content="#667eea" />
+    <meta name="msapplication-TileColor" content="#667eea" />
+
+    <!-- Apple 相關 -->
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) - 替換為您的實際 GTM ID -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- 結構化數據 - 網站基本資訊 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "React SEO",
+        "description": "現代化的 React 網站開發解決方案",
+        "url": "https://yourdomain.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yourdomain.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </body>
+</html>

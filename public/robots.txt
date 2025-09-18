@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# 禁止爬取的目錄
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# 爬取延遲（秒）
+Crawl-delay: 1
