@@ -1,10 +1,10 @@
 {
   "env": {
-    "VITE_API_URL": "https://your-api-domain.com"
+    "VITE_API_URL": "https://laravel-app-8wxf.onrender.com/"
   },
   "build": {
     "env": {
-      "VITE_API_URL": "https://your-api-domain.com"
+      "VITE_API_URL": "https://laravel-app-8wxf.onrender.com/"
     }
   }
 }
