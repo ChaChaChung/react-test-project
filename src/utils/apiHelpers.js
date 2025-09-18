@@ -6,7 +6,8 @@
  */
 export const fetchSEOData = async () => {
   try {
-    const response = await fetch('http://127.0.0.1:8000/api/get/seo-data', {
+    const url = import.meta.env.VITE_API_URL + '/api/get/seo-data';
+    const response = await fetch(url, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

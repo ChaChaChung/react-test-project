@@ -1,0 +1,10 @@
+{
+  "env": {
+    "VITE_API_URL": "https://your-api-domain.com"
+  },
+  "build": {
+    "env": {
+      "VITE_API_URL": "https://your-api-domain.com"
+    }
+  }
+}
