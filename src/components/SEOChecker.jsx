@@ -17,17 +17,22 @@ const SEOChecker = () => {
   useEffect(() => {
     // 從 DOM 中讀取實際的 SEO 數據
     const updateSEOData = () => {
+      // 取得 DOM 中的 title 和 meta 標籤
       const title = document.title || '';
       const descriptionMeta = document.querySelector('meta[name="description"]');
       const keywordsMeta = document.querySelector('meta[name="keywords"]');
-      
+
+      // 取得 meta 標籤的 content 屬性
       const description = descriptionMeta ? descriptionMeta.getAttribute('content') || '' : '';
       const keywords = keywordsMeta ? keywordsMeta.getAttribute('content') || '' : '';
-      
+
+      // 把資料設定到 currentSeoData 狀態中
       setCurrentSeoData({ title, description, keywords });
-      
+
       // 檢查 SEO 最佳實踐
       const issues = checkSEOBestPractices({ title, description, keywords });
+
+      // 把檢查結果設定到 seoIssues 狀態中
       setSeoIssues(issues);
     };
 
