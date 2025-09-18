@@ -1,19 +1,8 @@
 import React from 'react';
-import SEO from '../components/SEO';
-import useSEOData from '../hooks/useSEOData';
 
 const Home = () => {
-  const { seoData } = useSEOData();
-
   return (
     <div className="home">
-      <SEO
-        title={seoData.title}
-        description={seoData.description}
-        keywords={seoData.keywords}
-        url={window.location.origin}
-        image={`${window.location.origin}/vite.svg`}
-      />
       <section className="hero">
         <div className="container">
           <h1 className="hero-title">歡迎來到 React SEO</h1>

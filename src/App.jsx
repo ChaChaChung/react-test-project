@@ -6,9 +6,13 @@ import SEOChecker from './components/SEOChecker';
 import LocalSEOPanel from './components/LocalSEOPanel';
 import { createSEOTester } from './utils/localSEOTester';
 import { useSEO } from './contexts/SEOContext';
+import useSEOData from './hooks/useSEOData';
+import SEO from './components/SEO';
 
 function App() {
   const { loading, error } = useSEO();
+
+  const { seoData } = useSEOData();
 
   // 在開發環境載入 SEO 檢測工具
   useEffect(() => {
@@ -63,6 +67,14 @@ function App() {
           ⚠️ SEO API 載入失敗：{error}（已使用預設資料）
         </div>
       )}
+
+      <SEO
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        url={window.location.origin}
+        image={`${window.location.origin}/vite.svg`}
+      />
 
       <Header />
       <main className="main-content">
