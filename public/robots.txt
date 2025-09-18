@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://react-test-project-ufk2.vercel.app/sitemap.xml
 
 # 禁止爬取的目錄
 Disallow: /admin/
